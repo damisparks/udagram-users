@@ -14,7 +14,7 @@ before_script:
   - echo "no tests"
 
 script:
-  - cd project-3/udagram-apis/udagram-users
+  # - cd project-3/udagram-apis/udagram-users
   - docker --version 
   - docker build -t udagram-user-restapi .
   - docker tag udagram-user-restapi "$DOCKER_USERNAME"/udagram-user-restapi:latest
