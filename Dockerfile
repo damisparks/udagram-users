@@ -14,6 +14,9 @@ RUN npm install bcrypt
 # Bundle app source
 COPY . .
 
+# Run tsc on app
+RUN npm run tsc
+
 # Set the API’s port number
 EXPOSE 8080
 
